@@ -1,7 +1,7 @@
 # https://hub.docker.com/_/microsoft-dotnet-core
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /source
-
+test
 # copy csproj and restore as distinct layers
 COPY src/*.csproj ./
 RUN dotnet restore
